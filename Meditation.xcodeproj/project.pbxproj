@@ -11,6 +11,8 @@
 		E1819507282420F900072F63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1819506282420F900072F63 /* ContentView.swift */; };
 		E1819509282420FB00072F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1819508282420FB00072F63 /* Assets.xcassets */; };
 		E181950C282420FB00072F63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E181950B282420FB00072F63 /* Preview Assets.xcassets */; };
+		E1819513282421F700072F63 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1819512282421F700072F63 /* MeditationView.swift */; };
+		E18195152824256500072F63 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18195142824256500072F63 /* View+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E1819506282420F900072F63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E1819508282420FB00072F63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E181950B282420FB00072F63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E1819512282421F700072F63 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
+		E18195142824256500072F63 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,9 @@
 		E1819503282420F900072F63 /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
-				E1819504282420F900072F63 /* MeditationApp.swift */,
-				E1819506282420F900072F63 /* ContentView.swift */,
+				E18195182824258500072F63 /* App */,
+				E18195172824257F00072F63 /* Common */,
+				E18195192824259000072F63 /* Modules */,
 				E1819508282420FB00072F63 /* Assets.xcassets */,
 				E181950A282420FB00072F63 /* Preview Content */,
 			);
@@ -65,6 +70,39 @@
 				E181950B282420FB00072F63 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E18195162824257000072F63 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E18195142824256500072F63 /* View+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E18195172824257F00072F63 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E18195162824257000072F63 /* Extensions */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E18195182824258500072F63 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E1819506282420F900072F63 /* ContentView.swift */,
+				E1819504282420F900072F63 /* MeditationApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E18195192824259000072F63 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E1819512282421F700072F63 /* MeditationView.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1819507282420F900072F63 /* ContentView.swift in Sources */,
+				E1819513282421F700072F63 /* MeditationView.swift in Sources */,
+				E18195152824256500072F63 /* View+Extensions.swift in Sources */,
 				E1819505282420F900072F63 /* MeditationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
