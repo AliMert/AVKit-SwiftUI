@@ -14,7 +14,7 @@ A SwiftUI demo project.
          <img src="screenshots/screenshot1.png" width="200"> 
         </td>
         <td>
-          <img src="screenshots/screenshot.png" width="200">
+          <img src="screenshots/screenshot2.png" width="200">
         </td>
   </tr>
   <tr> 
