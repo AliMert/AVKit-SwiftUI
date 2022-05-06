@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E15023962824603200EF2EB4 /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15023952824603200EF2EB4 /* PlaybackControlButton.swift */; };
+		E15023982824673700EF2EB4 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15023972824673700EF2EB4 /* MeditationViewModel.swift */; };
+		E150239A282467AD00EF2EB4 /* Meditation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1502399282467AD00EF2EB4 /* Meditation.swift */; };
+		E15023A2282468FA00EF2EB4 /* DateComponentsFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15023A1282468FA00EF2EB4 /* DateComponentsFormatter+Extensions.swift */; };
+		E15023A528246C7500EF2EB4 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15023A428246C7500EF2EB4 /* AudioManager.swift */; };
+		E174C2342825114000BE63FC /* meditation1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E174C2332825114000BE63FC /* meditation1.mp3 */; };
 		E1819505282420F900072F63 /* MeditationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1819504282420F900072F63 /* MeditationApp.swift */; };
 		E1819507282420F900072F63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1819506282420F900072F63 /* ContentView.swift */; };
 		E1819509282420FB00072F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1819508282420FB00072F63 /* Assets.xcassets */; };
 		E181950C282420FB00072F63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E181950B282420FB00072F63 /* Preview Assets.xcassets */; };
 		E1819513282421F700072F63 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1819512282421F700072F63 /* MeditationView.swift */; };
 		E18195152824256500072F63 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18195142824256500072F63 /* View+Extensions.swift */; };
+		E181951B282435B400072F63 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181951A282435B400072F63 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E15023952824603200EF2EB4 /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
+		E15023972824673700EF2EB4 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
+		E1502399282467AD00EF2EB4 /* Meditation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meditation.swift; sourceTree = "<group>"; };
+		E15023A1282468FA00EF2EB4 /* DateComponentsFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateComponentsFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		E15023A428246C7500EF2EB4 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		E174C2332825114000BE63FC /* meditation1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = meditation1.mp3; sourceTree = "<group>"; };
+		E174C2352825121A00BE63FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E1819501282420F900072F63 /* Meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1819504282420F900072F63 /* MeditationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationApp.swift; sourceTree = "<group>"; };
 		E1819506282420F900072F63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +37,7 @@
 		E181950B282420FB00072F63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E1819512282421F700072F63 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		E18195142824256500072F63 /* View+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		E181951A282435B400072F63 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +51,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E150239B282467C200EF2EB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1502399282467AD00EF2EB4 /* Meditation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E150239C282467D800EF2EB4 /* Meditation */ = {
+			isa = PBXGroup;
+			children = (
+				E150239B282467C200EF2EB4 /* Model */,
+				E150239D282467E000EF2EB4 /* ViewModel */,
+				E150239E282467F800EF2EB4 /* View */,
+			);
+			path = Meditation;
+			sourceTree = "<group>";
+		};
+		E150239D282467E000EF2EB4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E15023972824673700EF2EB4 /* MeditationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E150239E282467F800EF2EB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1819512282421F700072F63 /* MeditationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E150239F2824681300EF2EB4 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				E15023A02824682000EF2EB4 /* View */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
+		E15023A02824682000EF2EB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E181951A282435B400072F63 /* PlayerView.swift */,
+				E15023952824603200EF2EB4 /* PlaybackControlButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E15023A328246C5100EF2EB4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E15023A428246C7500EF2EB4 /* AudioManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E174C2312825111100BE63FC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E174C2322825113400BE63FC /* mp3 */,
+				E1819508282420FB00072F63 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E174C2322825113400BE63FC /* mp3 */ = {
+			isa = PBXGroup;
+			children = (
+				E174C2332825114000BE63FC /* meditation1.mp3 */,
+			);
+			path = mp3;
+			sourceTree = "<group>";
+		};
 		E18194F8282420F900072F63 = {
 			isa = PBXGroup;
 			children = (
@@ -55,10 +146,11 @@
 		E1819503282420F900072F63 /* Meditation */ = {
 			isa = PBXGroup;
 			children = (
+				E174C2352825121A00BE63FC /* Info.plist */,
 				E18195182824258500072F63 /* App */,
 				E18195172824257F00072F63 /* Common */,
 				E18195192824259000072F63 /* Modules */,
-				E1819508282420FB00072F63 /* Assets.xcassets */,
+				E174C2312825111100BE63FC /* Resources */,
 				E181950A282420FB00072F63 /* Preview Content */,
 			);
 			path = Meditation;
@@ -76,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				E18195142824256500072F63 /* View+Extensions.swift */,
+				E15023A1282468FA00EF2EB4 /* DateComponentsFormatter+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -83,6 +176,7 @@
 		E18195172824257F00072F63 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				E15023A328246C5100EF2EB4 /* Utilities */,
 				E18195162824257000072F63 /* Extensions */,
 			);
 			path = Common;
@@ -91,8 +185,8 @@
 		E18195182824258500072F63 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				E1819506282420F900072F63 /* ContentView.swift */,
 				E1819504282420F900072F63 /* MeditationApp.swift */,
+				E1819506282420F900072F63 /* ContentView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -100,7 +194,8 @@
 		E18195192824259000072F63 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				E1819512282421F700072F63 /* MeditationView.swift */,
+				E150239C282467D800EF2EB4 /* Meditation */,
+				E150239F2824681300EF2EB4 /* Player */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -163,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E174C2342825114000BE63FC /* meditation1.mp3 in Resources */,
 				E181950C282420FB00072F63 /* Preview Assets.xcassets in Resources */,
 				E1819509282420FB00072F63 /* Assets.xcassets in Resources */,
 			);
@@ -175,10 +271,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E15023982824673700EF2EB4 /* MeditationViewModel.swift in Sources */,
+				E150239A282467AD00EF2EB4 /* Meditation.swift in Sources */,
 				E1819507282420F900072F63 /* ContentView.swift in Sources */,
 				E1819513282421F700072F63 /* MeditationView.swift in Sources */,
 				E18195152824256500072F63 /* View+Extensions.swift in Sources */,
+				E181951B282435B400072F63 /* PlayerView.swift in Sources */,
+				E15023962824603200EF2EB4 /* PlaybackControlButton.swift in Sources */,
 				E1819505282420F900072F63 /* MeditationApp.swift in Sources */,
+				E15023A528246C7500EF2EB4 /* AudioManager.swift in Sources */,
+				E15023A2282468FA00EF2EB4 /* DateComponentsFormatter+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +414,7 @@
 				DEVELOPMENT_TEAM = R38K25C8UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -341,6 +444,7 @@
 				DEVELOPMENT_TEAM = R38K25C8UB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
