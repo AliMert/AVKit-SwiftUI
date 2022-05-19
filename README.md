@@ -25,7 +25,10 @@ A SwiftUI demo project.
 </th>
   </tr>
   <tr>
-     <td colspan="3"> ![Demo Link](screenshots/demo.mp4) </td>
+     <td colspan="2">
+
+https://user-images.githubusercontent.com/37440706/169291081-3616de94-4d2f-4447-8b4d-b0076ce81a8f.mp4
+
   </tr>
 </tbody>
 </table>
